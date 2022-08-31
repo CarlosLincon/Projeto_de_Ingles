@@ -19,12 +19,9 @@ header {
   width: auto;
   display: flex;
   justify-content: center;
+  user-select: none;
 }
-.lista_header li:hover {
-  transition: scale 0.7s ease-in-out;
-    transform: scale(1.1);
-  
-}
+
 
 .lista_header li a {
   font-family: "Roboto", sans-serif;
@@ -39,6 +36,7 @@ header {
   bottom: 9px;
   width: 0;
   background-color: aqua;
+  margin-top: 1px;
 }
 
 .lista_header li:hover::before{

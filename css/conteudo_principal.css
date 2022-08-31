@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,500&family=Ubuntu:wght@300;400;500&display=swap');
+#section_prediction {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.conteudo_principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 25px;
+  flex-direction: column;
+}
+
+.conteinar_conteudo_principal {
+    width: 25%;
+    height: 425px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  background-color: #08aeea;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+}
+
+.conteudo_pricipal_section_img {
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  background: rgb(132, 63, 251);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(132, 63, 251, 1) 0%,
+    rgba(70, 110, 252, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(132, 63, 251, 1) 0%,
+    rgba(70, 110, 252, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(132, 63, 251, 1) 0%,
+    rgba(70, 110, 252, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#843ffb",endColorstr="#466efc",GradientType=1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo_pricipal_section_img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+.informacoes_perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  background-color: #f5f5f5;
+  border-radius: 25px;
+
+}
+
+.nome_perfis_main {
+    font-family: 'Roboto', sans-serif;
+    position: relative;    
+}
+
+.nome_perfis_main::after{
+    content: "";
+    position: absolute;
+    padding: 1px;
+    background-color: black;
+    width: 100%;
+
+}
+
+.icons_perfil{
+    padding: 5px;
+    
+}
+
+.icons_perfil img{
+    width: 48px;
+    height: 48px;
+    margin: 10px;
+    cursor: pointer;
+}
