@@ -48,3 +48,26 @@
     opacity: 1;
 
 }
+
+
+@media screen and (max-width:1279px) {
+    #modal_img{
+        width: 70vw;
+        height: 70vh;
+        transform: scale(0);
+        transition: all linear .3s;
+    }
+
+    #bt_close{
+        color:#fff;
+        background-color: #000;
+        position: absolute;
+        top:10vh;
+        right:10vw;
+        padding: 5px 10px;
+        font-size: 25px;
+        border:solid 1px #fff;
+        transition: all ease-out .4s;
+        cursor: pointer;
+    }
+ }
