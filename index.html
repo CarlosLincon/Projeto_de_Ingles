@@ -10,10 +10,17 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/conteudo_principal.css">
+    <link rel="stylesheet" href="./css/modal.css">
 
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal_content">
+            <img src="" id="modal_img">
+        </div>
+        <span id="bt_close">&times;</span>
+    </div>
     <a name="home"></a>
     <header>
         <ul class="lista_header home">
@@ -29,7 +36,7 @@
         <section id="prediction_section">
             <div class="conteinar_conteudo_principal">
                 <div class="conteudo_pricipal_section_img">
-                    <img src="./assents/perfis/carlos_lincon_img_principal.jfif" alt="Foto de perfil do Carlos Lincon">
+                    <img class="imagensModal" src="./assents/perfis/carlos_lincon_img_principal.jfif" alt="Foto de perfil do Carlos Lincon">
                 </div>
                 <div class="informacoes_perfil">
                     <div class="nome_perfis_main">
@@ -67,13 +74,13 @@
                             relacionados entre si, a fim de que você possa compreender a mensagem com mais rapidez.</p>
                     </li>
                 </ul>
-                <img src="./assents/Imagens_prediction/o_que_e_prediction.png"
+                <img class="imagensModal" src="./assents/Imagens_prediction/o_que_e_prediction.png"
                     alt="Imagem explicando o que é prediction">
             </div>
 
             <div class="conteinar_conteudo_principal">
                 <div class="conteudo_pricipal_section_img">
-                    <img src="./assents/perfis/rafael_gonzaga_img_principal.jpeg" alt="Foto de perfil do Carlos Lincon">
+                    <img class="imagensModal" src="./assents/perfis/rafael_gonzaga_img_principal.jpeg" alt="Foto de perfil do Carlos Lincon">
                 </div>
                 <div class="informacoes_perfil">
                     <div class="nome_perfis_main">
@@ -103,11 +110,11 @@
                     outras hipóteses, buscando outras pistas, sempre na tentativa de encontrar sentido no que lê).
                 </p>
                 <h3>Examples - reading documentation</h3>
-                <img class="imagens_height_examples" src="./assents/Imagens_prediction/reading_documentation.png"
+                <img class="imagensModal"  src="./assents/Imagens_prediction/reading_documentation.png"
                     alt="examples - reading documentation">
 
                 <h3>Example – The background knowledge</h3>
-                <img class="imagens_height_examples"
+                <img class="imagensModal" 
                     src="./assents/Imagens_prediction/example_the_background_knowledge.jpeg"
                     alt="examples - reading documentation">
             </div>
@@ -116,7 +123,7 @@
 
             <div class="conteinar_conteudo_principal">
                 <div class="conteudo_pricipal_section_img">
-                    <img src="./assents/perfis/leticia.jfif" alt="Foto de perfil do Carlos Lincon">
+                    <img class="imagensModal" src="./assents/perfis/leticia.jfif" alt="Foto de perfil do Carlos Lincon">
                 </div>
                 <div class="informacoes_perfil">
                     <div class="nome_perfis_main">
@@ -137,18 +144,18 @@
                     que pode ser compilado e transformado em um programa de computador,
                     ou usado como script interpretado - que informará instruções de processamento ao computador.</p>
                 <h3>Contexto in programming languages</h3>
-                <img class="imagens_height_examples"
+                <img class="imagensModal" 
                     src="./assents/Imagens_prediction/contexto_in_programming_languages.png"
                     alt="examples - reading documentation">
 
 
-                <img class="imagens_height_examples" src="./assents/Imagens_prediction/programming_languages.png"
+                <img class="imagensModal"  src="./assents/Imagens_prediction/programming_languages.png"
                     alt="examples - reading documentation">
             </div>
 
             <div class="conteinar_conteudo_principal">
                 <div class="conteudo_pricipal_section_img">
-                    <img src="./assents/perfis/maria_luiza_img_principal.jpeg" alt="Foto de perfil do Carlos Lincon">
+                    <img class="imagensModal" src="./assents/perfis/maria_luiza_img_principal.jpeg" alt="Foto de perfil do Carlos Lincon">
                 </div>
                 <div class="informacoes_perfil">
                     <div class="nome_perfis_main">
@@ -183,7 +190,7 @@
             </div>
             <div class="conteinar_conteudo_principal">
                 <div class="conteudo_pricipal_section_img">
-                    <img src="./assents/perfis/keven_douglas.jfif" alt="Foto de perfil do Carlos Lincon">
+                    <img class="imagensModal" src="./assents/perfis/keven_douglas.jfif" alt="Foto de perfil do Carlos Lincon">
                 </div>
                 <div class="informacoes_perfil">
                     <div class="nome_perfis_main">
@@ -196,7 +203,7 @@
                 </div>
             </div>
             <div class="conteudo_Prediction">
-                <img src="./assents/Imagens_prediction/brainstroming_whese_is_used.jpg"
+                <img class="imagensModal" src="./assents/Imagens_prediction/brainstroming_whese_is_used.jpg"
                     alt="Brainstroming – where is used">
                 <h1>Brainstroming – where is used?</h1>
                 <ul>
@@ -207,13 +214,13 @@
                     <li>Gestão de projetos;</li>
                     <li>Formação de equipes;</li>
                 </ul>
-                <img src="./assents/Imagens_prediction/gerenciamento_de_projetos.webp"
+                <img class="imagensModal"  src="./assents/Imagens_prediction/gerenciamento_de_projetos.webp"
                     alt="Brainstorming em gerenciamento de Projetos">
             </div>
 
             <div class="conteinar_conteudo_principal">
                 <div class="conteudo_pricipal_section_img">
-                    <img src="./assents/perfis/joao_pedro.jfif" alt="Foto de perfil do Carlos Lincon">
+                    <img class="imagensModal" src="./assents/perfis/joao_pedro.jfif" alt="Foto de perfil do Carlos Lincon">
                 </div>
                 <div class="informacoes_perfil">
                     <div class="nome_perfis_main">
@@ -230,16 +237,17 @@
             <div class="conteudo_Prediction">
 
                 <h2>Brainstorming – structure</h2>
-                <img src="./assents/Imagens_prediction/structure_img.png" alt="Brainstorming – structure">
+                <img class="imagensModal" src="./assents/Imagens_prediction/structure_img.png" alt="Brainstorming – structure">
                 <h2>Brainstorming examples – New Project ideas</h2>
-                <img src="./assents/Imagens_prediction/New_Project_ideas.jpg" alt="New Project ideas">
+                <img  class="imagensModal" src="./assents/Imagens_prediction/New_Project_ideas.jpg" alt="New Project ideas">
                 <h2>Brainstorming – Problem Solving</h2>
-                <img src="./assents/Imagens_prediction/Brainstorming – Problem Solving.jpg"
+                <img  class="imagensModal" src="./assents/Imagens_prediction/Brainstorming – Problem Solving.jpg"
                     alt="Brainstorming – Problem Solving">
             </div>
         </section>
 
     </main>
+    <script src="./js/javascript.js"></script>
 </body>
 
 </html>
