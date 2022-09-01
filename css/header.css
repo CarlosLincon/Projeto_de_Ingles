@@ -67,6 +67,7 @@ header {
   }
   .lista_header {
     display: inline-block;
+   padding: 0;
   }
   .lista_header li {
     font-size: 1rem;
