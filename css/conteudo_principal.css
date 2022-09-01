@@ -162,4 +162,12 @@
   width: 70vw;
   
 }
+
+.conteudo_Prediction p {
+  text-align: justify;
+}
+.conteudo_Prediction ul {
+ padding-left: 0;
+ padding: 10px;
+}
 }
