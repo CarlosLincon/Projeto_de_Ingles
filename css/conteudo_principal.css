@@ -1,30 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,500&family=Ubuntu:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Oswald:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,500&family=Ubuntu:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Oswald:wght@200;300;400;500&display=swap");
 #section_prediction {
-  width: 100%;
+  width: 75%;
   display: flex;
   justify-content: center;
   align-content: center;
+ 
 }
 
 .conteudo_principal {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
-  width: 100%;
+  margin: 50px auto;
+  width: 80%;
+
   border-radius: 25px;
   flex-direction: column;
-
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .conteinar_conteudo_principal {
-    width: 25%;
-    height: 325px;
+  width: 25%;
+  height: auto;
+  max-height: 425px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 40px;
 }
 
 .conteudo_pricipal_section_img {
@@ -51,14 +56,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .conteudo_pricipal_section_img img {
   width: 150px;
   height: 150px;
   border-radius: 150px;
-  
 }
 
 .informacoes_perfil {
@@ -66,73 +69,97 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: nowrap;
   margin-top: 10px;
   padding: 10px;
-  width: 80%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  
-
+  width: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .nome_perfis_main {
-    font-family: 'Roboto', sans-serif;
-    position: relative;    
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
-.nome_perfis_main::after{
-    content: "";
-    position: absolute;
-    padding: 1px;
-    background-color: black;
-    width: 100%;
-
+.nome_perfis_main::after {
+  content: "";
+  position: absolute;
+  padding: 1px;
+  background-color: black;
+  width: 100%;
 }
 
-.icons_perfil{
-    padding: 5px;
-    
+.icons_perfil {
+  padding: 5px;
 }
 
-.icons_perfil img{
-    width: 48px;
-    height: 48px;
-    margin: 10px;
-    cursor: pointer;
+.icons_perfil img {
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+  cursor: pointer;
 }
-#prediction_section{
+#prediction_section {
   width: 100%;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 #prediction_section h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 55px;
 }
 #prediction_section h3,
-#prediction_section h2{
+#prediction_section h2 {
   display: flex;
   margin-top: 55px;
-  font-family: 'Italiana', serif;
+  font-family: "Italiana", serif;
   justify-content: center;
 }
 
-.conteudo_Prediction{
+
+.conteudo_Prediction {
   width: 80%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 15px;
   margin-top: 10px;
   text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  flex-direction: column;
+
 }
-.conteudo_Prediction img{
+
+
+
+.conteudo_Prediction img {
   height: 550px;
-  width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 80%;
+  max-width: 850px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 15px;
-  margin: 25px;
-  padding: 10px;
+  margin: 10px;
+ 
 }
 
-
+@media screen and (max-width:1279px) {
+  #prediction_section h1 {
+    margin: 0 auto;
+    font-size:1rem;
+    
+  }.conteudo_Prediction img {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+  }
+.informacoes_perfil{
+  width: 70vw;
+  
+}
+}
