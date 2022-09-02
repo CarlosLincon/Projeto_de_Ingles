@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   align-content: center;
- 
 }
 
 .conteudo_principal {
@@ -89,6 +88,7 @@
   padding: 1px;
   background-color: black;
   width: 100%;
+
 }
 
 .icons_perfil {
@@ -121,7 +121,6 @@
   justify-content: center;
 }
 
-
 .conteudo_Prediction {
   width: 80%;
   font-family: "Roboto", sans-serif;
@@ -130,46 +129,46 @@
   text-align: left;
   display: flex;
   justify-content: center;
-  align-items:center ;
+  align-items: center;
   flex-direction: column;
-
 }
-
-
 
 .conteudo_Prediction img {
   max-height: 550px;
   width: auto;
   max-width: 850px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 15px;
   margin: 10px;
   width: auto;
   height: auto;
-    
 }
 
-@media screen and (max-width:1279px) {
+.imagensModal{
+ cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
   #prediction_section h1 {
     margin: 0 auto;
-    font-size:1rem;
-    
-  }.conteudo_Prediction img {
+    font-size: 1rem;
+  }
+  .conteudo_Prediction img {
     width: 100%;
     height: auto;
     margin: 10px auto;
     padding: 10px;
   }
-.informacoes_perfil{
-  width: 70vw;
-  
-}
+  .informacoes_perfil {
+    width: 70vw;
+  }
 
-.conteudo_Prediction p {
-  text-align: justify;
-}
-.conteudo_Prediction ul {
- padding-left: 0;
- padding: 10px;
-}
+  .conteudo_Prediction p {
+    text-align: justify;
+  }
+  .conteudo_Prediction ul {
+    padding-left: 0;
+    padding: 10px;
+  }
 }

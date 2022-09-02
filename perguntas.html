@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assents/icons/shortcut/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index/reset.css">
+    <link rel="stylesheet" href="./css/index/header.css">
+    <link rel="stylesheet" href="./css/index/modal.css">
+    <link rel="stylesheet" href="./css/perguntas/peguntas.css">
+
+    <title>Questions and Answers</title>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="modal_content">
+            <img src="" id="modal_img">
+        </div>
+        <span id="bt_close">&times;</span>
+    </div>
+    <a name="home"></a>
+    <header>
+        <a name="home"></a>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">Grupo Two</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a href="perguntas.html" class="nav-link">Questions and Answers</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="questionario">
+            <div class="container_questionario">
+                <div class="pontos_div">
+                    <p class="pontos"></p>
+                </div>
+                <div class="questoes">
+                    <p class="questoesP">Questão <span id="span"></span> De <span id="span2"></span></p>
+                </div>
+                <div class="pergunta">
+                    <p id="pergunta_p"></p>
+                </div>
+                <div class="respostas">
+                    <div data-index-number="1" id="0" class="resposta_div"></div>
+                    <div data-index-number="2" id="1" class="resposta_div"></div>
+                    <div data-index-number="3" id="2" class="resposta_div"></div>
+                    <div data-index-number="4" id="3" class="resposta_div"></div>
+                </div>
+                <div class="proxima_pergunta">&rang;</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/quiz.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
