@@ -127,7 +127,7 @@ proxima_pergunta.addEventListener("click", () => {
       divclass();
       criação();
     } else {
-      console.log(respotaClick)
+      
       span.textContent = respotaClick + 1;
       divclass();
       criação();
@@ -135,7 +135,7 @@ proxima_pergunta.addEventListener("click", () => {
   } else {
     alert("Antes de continuamos, por favor responda primeiro");
   }
-  console.log(respotaClick);
+ 
 });
 for (x = 0; x < resposta_div.length; x++) {
   resposta_div[x].addEventListener("click", (e) => {
@@ -157,7 +157,7 @@ for (x = 0; x < resposta_div.length; x++) {
             resposta_div[x].classList.add("errado");
           }
         }
-        console.log(i);
+
         i++;
       }
     } else {
@@ -178,9 +178,8 @@ for (x = 0; x < resposta_div.length; x++) {
             pontosP.textContent = pontos;
           }
         }
-        console.log(i);
         i++;
-      }
+      }  
     }
     respondeu = true;
   });
@@ -220,4 +219,5 @@ function getRandomIntInclusive(min, max) {
 }
 btClose.addEventListener("click", function () {
   modal.classList.toggle("modal_active");
+  modal_img.setAttribute("src", ` `);
 });
