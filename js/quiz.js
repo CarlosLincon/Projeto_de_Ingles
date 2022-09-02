@@ -207,9 +207,9 @@ criação();
 function gif(type) {
   let i = getRandomIntInclusive(1, 3);
   if (type == 1) {
-    modal_img.setAttribute("src", `../assents/gifs/a${i}.gif`);
+    modal_img.setAttribute("src", `./gifs/a${i}.gif`);
   } else {
-    modal_img.setAttribute("src", `../assents/gifs/e${i}.gif`);
+    modal_img.setAttribute("src", `./gifs/e${i}.gif`);
   }
   modal.classList.toggle("modal_active");
 }
