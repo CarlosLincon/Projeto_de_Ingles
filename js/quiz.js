@@ -127,7 +127,6 @@ proxima_pergunta.addEventListener("click", () => {
       divclass();
       criação();
     } else {
-      
       span.textContent = respotaClick + 1;
       divclass();
       criação();
@@ -135,9 +134,9 @@ proxima_pergunta.addEventListener("click", () => {
   } else {
     alert("Antes de continuamos, por favor responda primeiro");
   }
- 
 });
 for (x = 0; x < resposta_div.length; x++) {
+
   resposta_div[x].addEventListener("click", (e) => {
     let atr = e.target;
     let i = 1;
@@ -148,7 +147,7 @@ for (x = 0; x < resposta_div.length; x++) {
           resposta_div[x].classList.add("certo");
           if (respondeu == false) {
             gif(1);
-            pontos = pontos + 10;
+            pontos += 10;
             pontosP.textContent = pontos;
           }
         } else {
@@ -170,16 +169,20 @@ for (x = 0; x < resposta_div.length; x++) {
             resposta_div[x].classList.add("errado");
             if (respondeu == false) {
               gif(2);
-              pontos = pontos - 10;
+              pontos -= 10;
             }
-            if (pontos < 0) {
-              pontos = 0;
-            }
+            
             pontosP.textContent = pontos;
           }
         }
+        if (pontos < 0) {
+          pontos = 0;
+          pontosP.textContent = pontos;
+        }
+        respondeu = true;
         i++;
-      }  
+      }
+      
     }
     respondeu = true;
   });
@@ -208,6 +211,7 @@ function gif(type) {
   if (type == 1) {
     modal_img.setAttribute("src", `./gifs/a${i}.gif`);
   } else {
+
     modal_img.setAttribute("src", `./gifs/e${i}.gif`);
   }
   modal.classList.toggle("modal_active");
